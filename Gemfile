@@ -32,6 +32,7 @@ gem 'rails-i18n'
 
 # For authorization
 gem 'cancancan', '~> 1.10'
+gem 'rolify'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
