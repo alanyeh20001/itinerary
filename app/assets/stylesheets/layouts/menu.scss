@@ -1,0 +1,29 @@
+#menu {
+  .title-bar {
+    background: #FFCC77;
+    width: 100%;
+    padding: 0;
+    color: black;
+
+    .row {
+      max-width: 1000px;
+
+      li {
+        font-size: 18px;
+
+        &:last-child {
+          // float: right;
+        }
+
+        a {
+          color: #51337c;
+          font-weight: bold;
+
+          &:hover {
+            background: #dbb89a;
+          }
+        }
+      }
+    }
+  }
+}
