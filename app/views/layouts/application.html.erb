@@ -14,7 +14,10 @@
   <body>
     <%= render "layouts/menu" %>
 
-    <%= yield %>
+    <div class="row main align-center">
+      <%= yield %>
+
+      <%= render "layouts/sidebar" %>
     </div>
   </body>
 </html>
