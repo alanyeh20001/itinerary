@@ -30,6 +30,9 @@ gem 'devise'
 # Use I18n for translation
 gem 'rails-i18n'
 
+# For authorization
+gem 'cancancan', '~> 1.10'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
