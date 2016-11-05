@@ -11,13 +11,16 @@
       li {
         font-size: 18px;
 
-        &:last-child {
-          // float: right;
+        &:nth-child(-n+4) {
+          float: left;
+        }
+        &:nth-child(n+5) {
+          float: right;
         }
 
         a {
           color: #51337c;
-          font-weight: bold;
+          // font-weight: bold;
 
           &:hover {
             background: #dbb89a;
