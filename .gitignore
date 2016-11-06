@@ -19,3 +19,4 @@
 # Custom
 config/database.yml
 config/secrets.yml
+config/app_setting.yml

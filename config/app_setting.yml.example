@@ -1,0 +1,16 @@
+default: &DEFAULT
+  asset_host: "//localhost:3000"
+  aws_access_key_id: ""
+  aws_secret_access_key: ""
+
+development:
+  <<: *DEFAULT
+
+test:
+  <<: *DEFAULT
+
+production:
+  <<: *DEFAULT
+  asset_host: ""
+  fog_directory: ""
+  aws_access_key_id: ""
