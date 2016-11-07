@@ -40,6 +40,7 @@ gem 'rails_admin', '~> 1.0'
 # aws s3
 gem 'asset_sync'
 gem "paperclip", "~> 4.3.0"
+gem 'aws-sdk', '< 2'
 
 # Facilitate yaml
 gem 'settingslogic'
