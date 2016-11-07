@@ -43,6 +43,11 @@ gem 'asset_sync'
 # Facilitate yaml
 gem 'settingslogic'
 
+# Deployment
+group :development do
+  gem "capistrano", "~> 3.6"
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
