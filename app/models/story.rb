@@ -1,6 +1,8 @@
 class Story < ActiveRecord::Base
   include AssetDefault
 
+  belongs_to :journey
+
   DEFAULT_PATH = "/:class/:id/:attachment/:style/:filename"
 
   has_attached_file :photo,
