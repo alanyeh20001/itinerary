@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161107090356) do
+ActiveRecord::Schema.define(version: 20161108162453) do
 
   create_table "journeys", force: :cascade do |t|
     t.string   "title",       limit: 255
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20161107090356) do
     t.string   "photo_content_type", limit: 255
     t.integer  "photo_file_size",    limit: 4
     t.datetime "photo_updated_at"
+    t.integer  "journey_id",         limit: 4
   end
 
   create_table "users", force: :cascade do |t|
