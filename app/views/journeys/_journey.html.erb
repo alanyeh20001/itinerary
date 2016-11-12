@@ -1,0 +1,12 @@
+<%= link_to journey_path(journey) do %>
+  <div class="block column large-4 medium-6 small-12">
+    <div class="image">
+      <%= image_tag journey.stories.sample.photo.url(:medium) %>
+      <div class="image-overlay"></div>
+    </div>
+    <div class="text">
+      <h3><%= journey.title %></h3>
+      <p><%= journey.description %></p>
+    </div>
+  </div>
+<% end %>
