@@ -1,0 +1,16 @@
+#story-reveal {
+  width: 90%;
+  height: 95%;
+  background: #d2c4b4;
+
+  .image {
+    max-height: 100%;
+  }
+
+  .text {
+    h2 {
+      font-family: cursive, serif;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<%= link_to "javascript:void(0)",
+            class: "story-reveal-link",
+            data: { photo: story.photo.url(:original), content: story.content } do %>
+  <div class="block column large-3 medium-4 small-6">
+    <div class="image">
+      <%= image_tag story.photo.url(:medium) %>
+    </div>
+  </div>
+<% end %>
