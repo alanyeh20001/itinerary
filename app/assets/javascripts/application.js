@@ -15,6 +15,7 @@
 //= require foundation
 //= require reveal
 //= require menu
+//= require share
 
 $(function(){
   $(document).foundation();

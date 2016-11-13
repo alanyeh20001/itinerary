@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Itinerary" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : Settings.title %></title>
+    <link rel="canonical" href="<%= Settings.url %>/<%= request.path %>" />
+    <%= render "layouts/meta_tags" %>
 
-    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= render "layouts/og_tags" %>
+
+    <%= stylesheet_link_tag "application", media: "all" %>
 
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <%= render "layouts/fb_sdk" %>
+
     <%= render "layouts/menu" %>
 
     <div class="row main align-center">

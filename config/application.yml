@@ -1,0 +1,17 @@
+defaults: &defaults
+  title: "Itinerary-說走就走的旅行：）"
+  description: "記錄旅途中的每一刻，述說快門下的小故事。"
+  keywords: "旅遊，攝影，相片，故事。"
+  url: "http://itinerary.alanyeh20001.com"
+  app_id: "355344721465410"
+  type: "website"
+
+development:
+  <<: *defaults
+  url: "http://localhost:3000"
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
