@@ -12,13 +12,14 @@
 
       li {
         font-size: 18px;
+        height: 54px;
+
+        &:hover {
+          background: #dbb89a;
+        }
 
         a {
           color: #51337c;
-
-          &:hover {
-            background: #dbb89a;
-          }
         }
       }
     }
