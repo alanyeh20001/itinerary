@@ -1,11 +1,20 @@
-<div data-sticky-container id="menu">
-  <div class="title-bar" data-sticky data-options="marginTop:0;">
-    <div class="row align-center">
+<div class="title-bar" data-responsive-toggle="menu">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title"></div>
+</div>
+
+<div class="top-bar" id="menu">
+  <div class="row range align-center">
+    <div class="top-bar-left">
       <ul class="menu">
         <li class="menu-text">Itinerary</li>
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About Me", "#" %></li>
         <li><%= link_to "About Website", "#" %></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
         <li><a>Share</a></li>
         <%= render "layouts/user" %>
       </ul>

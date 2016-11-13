@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require reveal
+//= require menu
 
 $(function(){
   $(document).foundation();

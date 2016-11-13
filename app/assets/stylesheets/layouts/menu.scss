@@ -1,32 +1,45 @@
 #menu {
-  .title-bar {
-    background: #FFCC77;
-    width: 100%;
-    padding: 0;
-    color: black;
+  background: #FFCC77;
+  width: 100%;
+  padding: 0;
+  color: black;
 
-    .row {
-      max-width: 1000px;
+  .range {
+    max-width: 1200px;
+
+    ul {
+      background: #FFCC77;
 
       li {
         font-size: 18px;
 
-        &:nth-child(-n+4) {
-          float: left;
-        }
-        &:nth-child(n+5) {
-          float: right;
-        }
-
         a {
           color: #51337c;
-          // font-weight: bold;
 
           &:hover {
             background: #dbb89a;
           }
         }
       }
+    }
+  }
+}
+
+.title-bar {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  .title-bar {
+    background: #FFCC77;
+    display: block;
+  }
+
+  .top-bar {
+    display: none;
+
+    li {
+      display: inherit;
     }
   }
 }
