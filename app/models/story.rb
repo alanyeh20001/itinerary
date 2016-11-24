@@ -8,7 +8,7 @@ class Story < ActiveRecord::Base
   has_attached_file :photo,
     path: get_asset_path(DEFAULT_PATH),
     url: get_asset_url(DEFAULT_PATH),
-    styles: { medium: "300x200>" },
+    styles: { medium: "450x300>" },
     convert_options: { medium: "-quality 95 -strip" }
 
   validates_attachment_presence :photo
